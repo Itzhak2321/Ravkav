@@ -1,0 +1,7 @@
+{
+  "name": "סורק רב-קו NFC | Rav-Kav NFC Scanner",
+  "description": "אפליקציה מתקדמת לקריאת כרטיסי רב-קו באמצעות NFC (Web NFC), צפייה ביתרת ערך צבור, חוזים והיסטוריית נסיעות בתחבורה הציבורית בישראל",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

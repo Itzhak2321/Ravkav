@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Heebo', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbar for clean UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}
+
+@keyframes nfcPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+.animate-nfc-pulse-1 {
+  animation: nfcPulse 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.animate-nfc-pulse-2 {
+  animation: nfcPulse 2.4s cubic-bezier(0, 0, 0.2, 1) infinite 0.8s;
+}
+
+.animate-nfc-pulse-3 {
+  animation: nfcPulse 2.4s cubic-bezier(0, 0, 0.2, 1) infinite 1.6s;
+}
+
+/* Realistic Rav-Kav card styling */
+.ravkav-card-gradient {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 40%, #00796b 85%, #004d40 100%);
+}
+
+.ravkav-card-gold {
+  background: linear-gradient(135deg, #825a00 0%, #b8860b 35%, #d4af37 70%, #aa7c11 100%);
+}
+
+.ravkav-card-youth {
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 45%, #0288d1 80%, #0097a7 100%);
+}
+
+.ravkav-card-anon {
+  background: linear-gradient(135deg, #37474f 0%, #455a64 50%, #263238 100%);
+}
